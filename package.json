@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/confector/ahipara-website.git/issues"
   },
-  "homepage": "https://confector.github.io/ahipara-website",
+  "homepage": "https://confector.github.io/ahipara-website/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
