@@ -28,9 +28,8 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          mv dist/* ./       # Verschiebt alle Dateien und Verzeichnisse aus dist
-          mv dist/.* ./      # Verschiebt versteckte Dateien (wie .htaccess) aus dist
-          rm -rf dist        # Löscht das nun leere dist-Verzeichnis
+          rsync -av --remove-source-files dist/ ./  # Kopiert den Inhalt und entfernt die Quell-Dateien
+          rm -rf dist  # Löscht das dist-Verzeichnis, nachdem alles kopiert wurde
           git add .
           git commit -m "Deploy from GitHub Actions"
           git push origin main
