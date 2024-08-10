@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       <h1>
-        <center>Ahipara LLC</center>
+        <center>{ Ahipara LLC }</center>
       </h1>
       <h2>
         <center>
