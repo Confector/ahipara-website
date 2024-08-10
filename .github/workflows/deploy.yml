@@ -1,22 +1,22 @@
-name: Deploy React App to GitHub Pages
+name: Deploy to Main
 
 on:
   push:
     branches:
-      - main # Verwenden Sie hier den Branch-Namen, in dem Sie arbeiten
+      - main # Der Workflow wird bei jedem Push in den main-Branch ausgelöst
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: 'lts/*' # Verwendet die neueste LTS-Version von Node.js
 
       - name: Install dependencies
         run: npm install
@@ -24,8 +24,15 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./dist
+      - name: Copy files to main root
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          mv dist/* ./
+          mv dist/.* ./ # Verschiebt auch versteckte Dateien wie .htaccess
+          rm -rf dist
+          git add .
+          git commit -m "Deploy from GitHub Actions"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
