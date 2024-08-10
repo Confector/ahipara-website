@@ -1,4 +1,4 @@
-name: Deploy to Main
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main # Der Workflow wird bei jedem Push in den main-Branch ausgelöst
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,13 +24,13 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Copy files to main root
+      - name: Move built files to root
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          mv dist/* ./
-          mv dist/.* ./ # Verschiebt auch versteckte Dateien wie .htaccess
-          rm -rf dist
+          mv dist/* ./       # Verschiebt alle Dateien und Verzeichnisse aus dist
+          mv dist/.* ./      # Verschiebt versteckte Dateien (wie .htaccess) aus dist
+          rm -rf dist        # Löscht das nun leere dist-Verzeichnis
           git add .
           git commit -m "Deploy from GitHub Actions"
           git push origin main
