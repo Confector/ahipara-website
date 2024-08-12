@@ -1,0 +1,6 @@
+.icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  @apply flex bg-sand mr-4;
+}

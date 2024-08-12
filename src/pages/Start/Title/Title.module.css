@@ -1,0 +1,22 @@
+.carpet {
+  background-image: url('../../../assets/svg/carpet.svg');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1600px) {
+  .carpet {
+    background-position: center -120px;
+  }
+
+  @media (min-width: 1800px) {
+    .carpet {
+      background-position: center -300px;
+    }
+  }
+}
+
+.titleCircle {
+  width: 588px;
+  height: 588px;
+  border-radius: 294px;
+}
