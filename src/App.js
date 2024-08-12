@@ -8,7 +8,7 @@ const App = () => {
       </h1>
       <h2>
         <center>
-          We're under construction. Please check back for an update soon.
+          We're under construction. Please check back for an update soon...
         </center>
       </h2>
     </div>
