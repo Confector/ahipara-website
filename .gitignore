@@ -13,5 +13,8 @@ jspm_packages/
 # Optional eslint cache
 .eslintcache
 
-# dist
-dist
+# Ignore dist directory
+dist/
+
+# Exception for GitHub Actions
+!.github/workflows/*
