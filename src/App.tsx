@@ -13,10 +13,16 @@ const App = () => {
           <h1>
             <center>ahipara.de</center>
           </h1>
-
-          <center>
-            We're under construction. Please check back for an update soon.
-          </center>
+          <h2>
+            <center>Wir gestalten gerade um.</center>
+          </h2>
+          <p>
+            <center>
+              Bitte schauen Sie bald wieder vorbei für aktuelle Informationen.
+              <br />
+              Vielen Dank für Ihr Verständnis!
+            </center>
+          </p>
         </div>
       )}
     </div>
