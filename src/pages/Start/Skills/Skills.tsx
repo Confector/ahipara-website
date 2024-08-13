@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skills.module.css';
+import * as s from './Skills.module.css';
 
 const Skills = () => {
   return (
@@ -9,7 +9,7 @@ const Skills = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 m-6'>
         <div>
           <div className='flex items-center'>
-            <div className={styles.icon}></div>
+            <div className={s.icon}></div>
             <h2 className='uppercase'>UX Design</h2>
           </div>
           <h3>Research, Personas, Prototyping, User Testing, ...</h3>
@@ -21,7 +21,7 @@ const Skills = () => {
         </div>
         <div>
           <div className='flex items-center'>
-            <div className={styles.icon}></div>
+            <div className={s.icon}></div>
             <h2 className='uppercase'>Visual Design</h2>
           </div>
           <h3>Branding, UI-Design, Styleguides, Marketing Vorlagen, ...</h3>
@@ -33,7 +33,7 @@ const Skills = () => {
         </div>
         <div>
           <div className='flex items-center'>
-            <div className={styles.icon}></div>
+            <div className={s.icon}></div>
             <h2 className='uppercase'>Design Systems</h2>
           </div>
           <h3>Responsive Design, Figma, Pattern Library, Dev Handover, ...</h3>
@@ -46,7 +46,7 @@ const Skills = () => {
 
         <div>
           <div className='flex items-center'>
-            <div className={styles.icon}></div>
+            <div className={s.icon}></div>
             <h2 className='uppercase'>UI Styling</h2>
           </div>
           <h3>Design Tokens, Responsive Design, Atomic Design, Konventionen</h3>
@@ -63,7 +63,7 @@ const Skills = () => {
         </div>
         <div>
           <div className='flex items-center'>
-            <div className={styles.icon}></div>
+            <div className={s.icon}></div>
             <h2 className='uppercase'>Micro Frontends</h2>
           </div>
           <h3>Module Federation, komponentenbasierte Frontend-Architekturen</h3>
@@ -78,7 +78,7 @@ const Skills = () => {
         </div>
         <div>
           <div className='flex items-center'>
-            <div className={styles.icon}></div>
+            <div className={s.icon}></div>
             <h2 className='uppercase'>Web 3 & Blockchain</h2>
           </div>
           <h3>Smart Contracts, DeFi, Ethereum, NFT</h3>

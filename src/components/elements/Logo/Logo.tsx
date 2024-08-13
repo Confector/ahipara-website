@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Logo.module.css';
+import * as s from './Logo.module.css';
 
 const Logo = () => {
   return (
     <div>
-      <div className={styles.ahiparaLogo}></div>
+      <div className={s.ahiparaLogo}></div>
     </div>
   );
 };
