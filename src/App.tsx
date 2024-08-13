@@ -16,7 +16,7 @@ const App = () => {
           <h2>
             <center>Wir gestalten gerade um.</center>
           </h2>
-          <p>
+          <p style={{ lineHeight: 1.5 }}>
             <center>
               Bitte schauen Sie bald wieder vorbei für aktuelle Informationen.
               <br />
