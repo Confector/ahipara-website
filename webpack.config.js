@@ -9,6 +9,27 @@ module.exports = {
   },
   module: {
     rules: [
+      // CSS-Modules
+      {
+        test: /\.module\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[name]__[local]___[hash:base64:5]',
+              },
+            },
+          },
+        ],
+      },
+      // CSS-Files
+      {
+        test: /\.css$/,
+        exclude: /\.module\.css$/, // Except CSS-Modules
+        use: ['style-loader', 'css-loader'],
+      },
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
@@ -19,6 +40,9 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
     extensions: ['.js', '.jsx', '.ts', '.tsx', 'json'],
   },
   plugins: [

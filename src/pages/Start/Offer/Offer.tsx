@@ -1,13 +1,11 @@
 import React from 'react';
-import styles from './Offer.module.css';
+import * as s from './Offer.module.css';
 
 const Offer = () => {
   return (
     <div>
       <h1>Lorem ipsum dolor sit amet, consetetur sadipscing </h1>
-      <div
-        className={`flex items-center justify-end gap-10 bg-cover ${styles.eye}`}
-      >
+      <div className={`flex items-center justify-end gap-10 bg-cover ${s.eye}`}>
         <div
           style={{
             width: '490px',
