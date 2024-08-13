@@ -1,7 +1,7 @@
 import React from 'react';
 // import Head from 'next/head';
 import './styles/globals.css';
-import Start from './pages/Start/Start';
+// import Start from './pages/Start/Start';
 
 const App = () => {
   return (
