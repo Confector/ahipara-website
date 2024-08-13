@@ -14,5 +14,5 @@ jspm_packages/
 .eslintcache
 
 # Ignore dist directory
-dist/
+# dist/
 
