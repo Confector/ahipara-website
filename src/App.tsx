@@ -18,7 +18,7 @@ const App = () => {
           </h2>
           <p style={{ lineHeight: 1.5 }}>
             <center>
-              Bitte schauen Sie bald wieder vorbei für aktuelle Informationen.
+              Bitte schauen Sie bald wieder vorbei.
               <br />
               Vielen Dank für Ihr Verständnis!
             </center>
