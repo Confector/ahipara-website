@@ -28,7 +28,7 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /\.module\.css$/, // Except CSS-Modules
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(ts|tsx)$/,

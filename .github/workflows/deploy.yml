@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main # Der Workflow wird bei jedem Push in den main-Branch ausgelöst
+      - main # Triggger workflow after each push to the main branch
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*' # Verwendet die neueste LTS-Version von Node.js
+          node-version: 'lts/*' # Use latest LTS-Version of Node.js
 
       - name: Install dependencies
         run: npm install
@@ -43,4 +43,3 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }} # Verwende das gespeicherte Secret

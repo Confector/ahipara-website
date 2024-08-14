@@ -6,7 +6,9 @@ const Title = () => {
   // console.log('styles: ' + styles);
   return (
     <div>
-      <Logo />
+      <div style={{ position: 'absolute', top: '24px', left: '24px' }}>
+        <Logo />
+      </div>
       <div
         className={`flex items-center justify-center h-screen bg-center bg-cover ${s.carpet}`}
       >
