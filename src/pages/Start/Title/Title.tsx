@@ -3,7 +3,6 @@ import Logo from '@/components/elements/Logo/Logo';
 import * as s from './Title.module.css';
 
 const Title = () => {
-  // console.log('styles: ' + styles);
   return (
     <div>
       <div style={{ position: 'absolute', top: '24px', left: '24px' }}>

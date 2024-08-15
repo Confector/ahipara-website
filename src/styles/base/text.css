@@ -8,14 +8,14 @@ h1,
 .h1 {
   font-family: 'Pattaya', serif;
   @apply font-light text-xl;
-  /* font-size: 36px;
-  line-height: 46px; */
+  font-size: 36px;
+  line-height: 46px;
 }
 @media (min-width: 640px) {
   h1,
   .h1 {
-    /* font-size: 52px;
-    line-height: 64px; */
+    font-size: 52px;
+    line-height: 64px;
     @apply text-xl;
   }
 }
@@ -23,15 +23,15 @@ h1,
 h2,
 .h2 {
   @apply font-light text-lg;
-  /* font-size: 28px;
-  line-height: 40px; */
+  font-size: 28px;
+  line-height: 40px;
 }
 @media (min-width: 640px) {
   h2,
   .h2 {
     @apply text-lg;
-    /* font-size: 40px;
-    line-height: 64px; */
+    font-size: 40px;
+    line-height: 64px;
   }
 }
 

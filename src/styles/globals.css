@@ -4,13 +4,31 @@
 
 @import url('./base/fonts.css');
 @import url('./base/text.css');
-@import url('./components/button.css');
+/* @import url('./base/button.css'); */
 
 html {
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  /* font-size: 16px;
-  line-height: 28px; */
+  font-size: 16px;
+  line-height: 28px;
   @apply text-base text-darkblue;
+}
+
+/* components/button.css */
+
+.btn {
+  @apply px-8 py-4 rounded-full text-base font-medium transition ease-in-out hover:scale-105 duration-300 transform;
+}
+
+.btn-sm {
+  @apply text-sm px-4 py-3;
+}
+
+.btn-primary {
+  @apply bg-cyan-500 hover:bg-cyan-300;
+}
+
+.btn-secondary {
+  @apply bg-darkblue text-white;
 }
