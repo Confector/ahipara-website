@@ -5,7 +5,7 @@ import Title from '@/pages/Start/Title/Title';
 import Offer from '@/pages/Start/Offer/Offer';
 import Skills from '@/pages/Start/Skills/Skills';
 import About from '@/pages/Start/About/About';
-// import Contact from '@/pages/Start/Contact/Contact';
+import Contact from '@/pages/Start/Contact/Contact';
 
 const Start = () => {
   return (
@@ -15,7 +15,7 @@ const Start = () => {
       <Offer />
       <Skills />
       <About />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );
