@@ -22,6 +22,16 @@ const Title = () => {
           <button className='btn btn-primary'>Kennenlernen vereinbaren</button>
         </div>
       </div>
+      {/* Ahipara bietet umfassende digitale Lösungen und Dienstleistungen, die UX
+      Design, Visual Design und Design Systeme nahtlos miteinander verbinden.
+      Wir entwickeln konsistente Component Libraries und sorgen durch unsere
+      Expertise in Web Accessibility für barrierefreie und nutzerfreundliche
+      Anwendungen. Mit modernsten Ansätzen wie Micro Frontends und Cloud Native
+      Architekturen schaffen wir skalierbare und flexible Lösungen, die den
+      individuellen Anforderungen unserer Kunden gerecht werden. Ergänzend dazu
+      bieten wir maßgeschneidertes Consulting und Coaching, um unsere Kunden in
+      ihrer digitalen Transformation und technischen Weiterentwicklung optimal
+      zu unterstützen. */}
     </div>
   );
 };
